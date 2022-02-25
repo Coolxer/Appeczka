@@ -8,7 +8,6 @@ export default defineConfig({
   resolve:{
     alias:{
       '@' : path.resolve(__dirname, './src'),
-      '#' : path.resolve(__dirname, './src/assets')
     },
   },
   plugins: [
@@ -20,5 +19,10 @@ export default defineConfig({
       // you need to set i18n resource including paths !
       include: path.resolve(__dirname, './src/locales/**')
     })
-  ]
+  ],
+  css: {
+    preprocessorOptions: {
+      scss: { additionalData: `@import "${path.resolve(__dirname, "./src")}/assets/style/variables";` },
+    },
+  },
 })

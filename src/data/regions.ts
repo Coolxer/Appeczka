@@ -1,14 +1,6 @@
-import { enUS, ruRU, deDE, dateEnUS, dateRuRU, dateDeDE} from 'naive-ui';
+import {enUS, plPL, deDE, dateEnUS, datePlPL, dateDeDE} from 'naive-ui';
 
 export const regions: Object[] = [
-  /*
-  {
-    "label": "Polska",
-    "value": "pl",
-    "language": {}, // to change
-    "date": {} // to change
-  },
-  */
   {
     "label": "English",
     "value": "en",
@@ -16,10 +8,10 @@ export const regions: Object[] = [
     "date": dateEnUS
   },
   {
-    "label": "Россия",
-    "value": "ru",
-    "language": ruRU,
-    "date": dateRuRU
+    "label": "Polska",
+    "value": "pl",
+    "language": plPL,
+    "date": datePlPL
   },
   {
     "label": "Deutschland",

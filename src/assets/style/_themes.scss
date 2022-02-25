@@ -1,0 +1,29 @@
+@use "colors";
+
+$theme-light-palette: (
+  background--color: colors.$white,
+  text--color: colors.$dark,
+  text2--color: colors.$primary,
+);
+
+$theme-dark-palette: (
+  background--color: colors.$secondary,
+  text--color: colors.$white,
+  text2--color: colors.$primary,
+);
+
+.theme-light {
+  @each $name, $color in $theme-light-palette {
+    --color-#{$name}: #{$color};
+  }
+}
+
+.theme-dark {
+  @each $name, $color in $theme-dark-palette {
+    --color-#{$name}: #{$color};
+  }
+}
+
+@function getColor($color-name) {
+  @return var(--color-#{$color-name});
+}

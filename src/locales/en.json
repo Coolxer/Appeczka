@@ -1,5 +1,14 @@
 {
     "language": "language",
+    "navbar": {
+        "menu": {
+            "home": "Home",
+            "about": "About",
+            "offer": "Offer",
+            "bid_request": "Bid request",
+            "contact": "Contact"
+        }
+    },
     "region": "region",
     "theme": "theme"
 }
